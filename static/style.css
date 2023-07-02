@@ -1,0 +1,203 @@
+/* Definiert den Stil für den gesamten Körper der Webseite */
+body {
+    font-family: 'Open Sans', sans-serif; /* Schriftart */
+    color: rgb(0, 0, 0); /* Textfarbe */
+    font-size: 20px; /* Schriftgröße */
+    margin: 0; /* Entfernt den Außenabstand des Körperbereichs */
+}
+
+
+/* Definiert den Stil für alle <div>-Elemente */
+div {
+    min-height: 100px; /* Mindesthöhe des <div>-Elements */
+    margin-bottom: 50px; /* Unten ein Abstand von 50px */
+}
+
+
+/* Definiert den Stil für alle <input>-Elemente */
+input {
+    background-color: rgba(255, 255, 255, 0.1); /* Hintergrundfarbe mit Transparenz */
+    border: 1px solid rgb(0, 0, 0); /* Rand mit 1px Breite und schwarzer Farbe */
+    border-radius: 2px; /* Abgerundete Ecken des Elements */
+    color: rgb(0, 0, 0); /* Textfarbe */
+    font-size: 10px; /* Schriftgröße */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "Bild" */
+.Bild {
+    width: 90%; /* Breite des Elements auf 90% festgelegt */
+    display: flex; /* Verwendet Flexbox für das Layout */
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+    align-items: center; /* Zentriert den Inhalt vertikal */
+    margin-top: 60px; /* Oberer Abstand von 60px */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "FinancePro" */
+.FinancePro {
+    align-items: center; /* Zentriert den Inhalt vertikal */
+    font-size: 70px; /* Schriftgröße */
+    text-align: center; /* Zentriert den Text horizontal */
+    position: relative; /* Position relativ zum normalen Fluss */
+    top: 30px; /* Verschiebt das Element um 30px nach unten */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "AllesAEB" */
+.AllesAEB {
+    align-items: center; /* Zentriert den Inhalt vertikal */
+    font-size: 25px; /* Schriftgröße */
+    text-align: center; /* Zentriert den Text horizontal */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "Part1" */
+.Part1 {
+    font-size: 30px; /* Schriftgröße */
+    margin-left: auto; /* Linker Abstand automatisch berechnet */
+    margin-right: auto; /* Rechter Abstand automatisch berechnet */
+    max-width: 800px; /* Maximale Breite des Elements auf 800px festgelegt */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "Name" */
+.Name {
+    font-size: 20px; /* Schriftgröße */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "Farbe" */
+.Farbe {
+    font-size: 20px; /* Schriftgröße */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "popup-overlay" */
+.popup-overlay {
+    position: fixed; /* Position relativ zum Viewport */
+    top: 0; /* Position oben auf 0px */
+    left: 0; /* Position links auf 0px */
+    width: 100%; /* Breite des Elements auf 100% festgelegt */
+    height: 100%; /* Höhe des Elements auf 100% festgelegt */
+    background-color: rgba(0, 0, 0, 0.668); /* Hintergrundfarbe mit Transparenz */
+    display: flex; /* Verwendet Flexbox für das Layout */
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+    align-items: center; /* Zentriert den Inhalt vertikal */
+    z-index: 999; /* Stapelt das Element über anderen Inhalten */
+    opacity: 0; /* Anfangsopazität auf 0 (unsichtbar) */
+    pointer-events: none; /* Keine Ereignisse für das Element zulassen */
+    transition: opacity 0.3s ease; /* Übergangseffekt für die Opazität */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "popup-content" */
+.popup-content {
+    background-color: rgba(61, 61, 61, 0.776); /* Hintergrundfarbe mit Transparenz */
+    padding: 20px; /* Innenabstand von 20px */
+    border-radius: 5px; /* Abgerundete Ecken des Elements */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "color-picker" */
+.color-picker {
+    display: flex; /* Verwendet Flexbox für das Layout */
+    justify-content: space-between; /* Platz zwischen den Elementen verteilen */
+    margin-bottom: 10px; /* Unten ein Abstand von 10px */
+    gap: 5px; /* Zwischenabstand zwischen den Elementen */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "color-circle" */
+.color-circle {
+    width: 100px; /* Breite des Elements auf 100px festgelegt */
+    height: 100px; /* Höhe des Elements auf 100px festgelegt */
+    border-radius: 50%; /* Runder Rand */
+    cursor: pointer; /* Zeiger wird zu einer Hand, wenn über das Element gehovered wird */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "category-table" */
+.category-table {
+    width: 100%; /* Breite des Elements auf 100% festgelegt */
+    border-collapse: collapse; /* Randkollaps aktivieren */
+    font-family: 'Raleway', sans-serif; /* Schriftart */
+    font-size: 16px; /* Schriftgröße */
+}
+
+
+/* Definiert den Stil für <th> und <td> Elemente in der "category-table" Klasse */
+.category-table th,
+.category-table td {
+    padding: 5px; /* Innenabstand von 5px */
+    border-bottom: 1px solid #ddd; /* Unterer Rand mit 1px Breite und Grauton */
+    text-align: left; /* Text linksbündig ausrichten */
+    padding: 8px; /* Innenabstand von 8px */
+}
+
+
+/* Definiert den Stil für <th> Elemente in der "category-table" Klasse */
+.category-table th {
+    background-color: #f2f2f2; /* Hintergrundfarbe */
+    font-size: 16px; /* Schriftgröße */
+    font-weight: bold; /* Fettgedruckter Text */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "delete-button" */
+.delete-button {
+    background-color: red; /* Hintergrundfarbe rot */
+    color: white; /* Textfarbe weiß */
+    border: none; /* Kein Rand */
+    padding: 5px 10px; /* Innenabstand von 5px oben/unten, 10px links/rechts */
+    border-radius: 5px; /* Abgerundete Ecken des Elements */
+    cursor: pointer; /* Zeiger wird zu einer Hand, wenn über das Element gehovered wird */
+    float: right; /* Rechts ausrichten */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "Kategorien" */
+.Kategorien {
+    font-size: 20px; /* Schriftgröße */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "dropdown-container" */
+.dropdown-container {
+    display: flex; /* Verwendet Flexbox für das Layout */
+    align-items: center; /* Zentriert den Inhalt vertikal */
+}
+
+
+/* Definiert den Stil für <label> Elemente in der "dropdown-container" Klasse */
+.dropdown-container label {
+    margin-right: 5px; /* Rechter Abstand von 5px */
+}
+
+
+/* Definiert den Stil für <input type="text"> Elemente in der "dropdown-container" Klasse */
+.dropdown-container input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.1); /* Hintergrundfarbe mit Transparenz */
+    border: 1px solid rgb(0, 0, 0); /* Rand mit 1px Breite und schwarzer Farbe */
+    border-radius: 2px; /* Abgerundete Ecken des Elements */
+    font-size: 10px; /* Schriftgröße */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "Betrag-container" */
+.Betrag-container {
+    margin-top: -90px; /* Oberer Abstand von -90px (nach oben verschieben) */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "Button2" */
+.Button2 {
+    position: relative; /* Position relativ zum normalen Fluss */
+    bottom: 20px; /* Verschiebt das Element um 20px nach unten */
+}
+
+
+/* Definiert den Stil für Elemente mit der Klasse "Summe" */
+.Summe {
+    margin-left: 666px; /* Linker Abstand von 666px */
+}
